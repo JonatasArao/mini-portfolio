@@ -5,7 +5,7 @@ Bem-vindo ao repositório do Mini Portfólio! Este projeto é um site simples qu
 ## Acesse o Portfólio
 
 Explore o site diretamente pelo link abaixo:
-[Mini Portfólio](https://jonatasarao.github.io/mini-portifolio)
+[Mini Portfólio](https://jonatasarao.github.io/mini-portfolio)
 
 ## Estrutura do Projeto
 
