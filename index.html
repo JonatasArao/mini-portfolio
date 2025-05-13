@@ -4,52 +4,64 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Mini Portifólio</title>
+	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-	<header>
-		<img width="150" src="https://avatars.githubusercontent.com/u/51247074" alt="Foto de perfil de Jonatas Arão">
-		<h1>Jonatas Arão</h1>
-		<nav role="navigation">
-			<a href="index.html" aria-current="page">Home</a>
-			<a href="sobre.html">Sobre</a>
-			<a href="projetos.html">Projetos</a>
+	<header class="header">
+		<div class="header-profile">
+			<img class="profile-image" src="https://avatars.githubusercontent.com/u/51247074" alt="Foto de perfil de Jonatas Arão">
+			<h1 class="profile-name">Jonatas Arão</h1>
+		</div>
+		<nav class="header-navigation" role="navigation">
+			<a class="nav-link" href="index.html" aria-current="page">Home</a>
+			<a class="nav-link" href="sobre.html">Sobre</a>
+			<a class="nav-link" href="projetos.html">Projetos</a>
 		</nav>
 	</header>
-	<main>
-		<section>
-			<h2>Olá, meu nome é Jonatas.</h2>
-			<p>
+	<main class="main-content">
+		<section class="introduction-section">
+			<h2 class="section-title">Olá, meu nome é Jonatas.</h2>
+			<p class="section-description"></p>
 				Sou um desenvolvedor de software com formação em matemática, o que me permite abordar cada projeto com uma perspectiva analítica e criativa.
 				Procuro usar o que aprendi nas áreas de educação e programação para resolver problemas do cotidiano, colaborando com pessoas,
 				aplicando métodos didáticos para transformar ideias em realidade e utilizando raciocínio lógico para solucionar desafios.
 			</p>
 		</section>
-		<section>
-			<h2>Projetos em Destaque</h2>
-			<div>
-				<article>
-					<img src="img/bibliaobs.png" alt="Ícone do projeto Bíblia OBS">
-					<h3>Bíblia OBS - JavaScript + Electron</h3>
-					<p>App para exibir versículos bíblicos em transmissões.</p>
+		<section class="projects-section">
+			<h2 class="section-title">Projetos em Destaque</h2>
+			<div class="projects-container">
+				<article class="project-card">
+					<img class="project-image" src="img/bibliaobs.png" alt="Ícone do projeto Bíblia OBS">
+					<div class="project-details">
+						<h3 class="project-title">Bíblia OBS</h3>
+						<p class="project-language"><strong>Linguagem:</strong> JavaScript</p>
+						<p class="project-description">App para exibir versículos bíblicos em transmissões.</p>
+					</div>
 				</article>
-				<article>
-					<img src="img/fdf.png" alt="Ícone do projeto FdF">
-					<h3>FdF - C</h3>
-					<p>Visualizador de mapas 3D em wireframe.</p>
+				<article class="project-card">
+					<img class="project-image" src="img/fdf.png" alt="Ícone do projeto FdF">
+					<div class="project-details">
+						<h3 class="project-title">FdF</h3>
+						<p class="project-language"><strong>Linguagem:</strong> C</p>
+						<p class="project-description">Visualizador de mapas 3D em wireframe.</p>
+					</div>
 				</article>
-				<article>
-					<img src="img/minishell.png" alt="Ícone do projeto Minishell">
-					<h3>Minishell - C</h3>
-					<p>Shell Unix simplificado.</p>
+				<article class="project-card">
+					<img class="project-image" src="img/minishell.png" alt="Ícone do projeto Minishell">
+					<div class="project-details">
+						<h3 class="project-title">Minishell</h3>
+						<p class="project-language"><strong>Linguagem:</strong> C</p>
+						<p class="project-description">Shell Unix simplificado.</p>
+					</div>
 				</article>
 			</div>
 		</section>
 	</main>
-	<footer>
-		<p>&copy; 2025</p>
-		<ul>
-			<li><a href="https://br.linkedin.com/in/jonatas-arao" target="_blank" rel="noopener">LinkedIn</a></li>
-			<li><a href="mailto:jonatas_arao@outlook.com">Email</a></li>
+	<footer class="footer">
+		<p class="footer-copyright">&copy; 2025</p>
+		<ul class="footer-links">
+			<li class="footer-link-item"><a class="footer-link" href="https://br.linkedin.com/in/jonatas-arao" target="_blank" rel="noopener">LinkedIn</a></li>
+			<li class="footer-link-item"><a class="footer-link" href="mailto:jonatas_arao@outlook.com">Email</a></li>
 		</ul>
 	</footer>
 </body>

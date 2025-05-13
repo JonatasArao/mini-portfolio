@@ -4,15 +4,18 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Mini Portifólio - Projetos</title>
+	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-	<header>
-		<img width="150" src="https://avatars.githubusercontent.com/u/51247074" alt="Foto de perfil de Jonatas Arão">
-		<h1>Jonatas Arão</h1>
-		<nav role="navigation">
-			<a href="index.html" aria-current="page">Home</a>
-			<a href="sobre.html">Sobre</a>
-			<a href="projetos.html">Projetos</a>
+	<header class="header">
+		<div class="header-profile">
+			<img class="profile-image" width="150" src="https://avatars.githubusercontent.com/u/51247074" alt="Foto de perfil de Jonatas Arão">
+			<h1 class="profile-name">Jonatas Arão</h1>
+		</div>
+		<nav class="header-navigation" role="navigation">
+			<a class="nav-link" href="index.html">Home</a>
+			<a class="nav-link" href="sobre.html">Sobre</a>
+			<a class="nav-link" href="projetos.html" aria-current="page">Projetos</a>
 		</nav>
 	</header>
 	<main>
@@ -22,24 +25,28 @@
 				<article>
 					<img src="img/ecothink.png" alt="Ícone do projeto Ecothink">
 					<h3>Ecothink</h3>
+					<p><strong>Linguagem:</strong> Javascript - Node</p>
 					<p>API RESTful desenvolvida para um aplicativo que promove eventos e iniciativas focados em ecologia e sustentabilidade.</p>
 					<a href="https://github.com/TCC-ThinkStart/ecoThink-BackEnd" target="_blank" rel="noopener noreferrer"><img src="img/github.png" alt="Logo do Github" width="20">GitHub</a>
 				</article>
 				<article>
 					<img src="img/bibliaobs.png" alt="Ícone do projeto Bíblia OBS">
 					<h3>Bíblia OBS</h3>
+					<p><strong>Linguagem:</strong> JavaScript - Electron</p>
 					<p>App para exibir versículos bíblicos em transmissões.</p>
 					<a href="https://github.com/JonatasArao/biblia-obs" target="_blank" rel="noopener noreferrer"><img src="img/github.png" alt="Logo do Github" width="20">GitHub</a>
 				</article>
 				<article>
 					<img src="img/libft.png" alt="Ícone do projeto libFT">
 					<h3>libFT</h3>
+					<p><strong>Linguagem:</strong> C</p>
 					<p>Biblioteca de funções inspirada na libC.</p>
 					<a href="https://github.com/JonatasArao/libft" target="_blank" rel="noopener noreferrer"><img src="img/github.png" alt="Logo do Github" width="20">GitHub</a>
 				</article>
 				<article>
 					<img src="img/get_next_line.png" alt="Ícone do projeto GetNextLine">
 					<h3>Get Next Line</h3>
+					<p><strong>Linguagem:</strong> C</p>
 					<p>Função para leitura de linhas de arquivos.</p>
 					<a href="https://github.com/JonatasArao/get_next_line" target="_blank" rel="noopener noreferrer"><img src="img/github.png" alt="Logo do Github" width="20">GitHub</a>
 				</article>
@@ -52,23 +59,25 @@
 				<article>
 					<img src="img/minitalk.png" alt="Ícone do projeto Minitalk">
 					<h3>Minitalk</h3>
+					<p><strong>Linguagem:</strong> C</p>
 					<p>Aplicação para comunicação entre processos via sinais Unix.</p>
 					<a href="https://github.com/JonatasArao/minitalk" target="_blank" rel="noopener noreferrer"><img src="img/github.png" alt="Logo do Github" width="20">GitHub</a>
 				</article>
 				<article>
 					<img src="img/minishell.png" alt="Ícone do projeto Minishell">
 					<h3>Minishell</h3>
+					<p><strong>Linguagem:</strong> C</p>
 					<p>Shell Unix simplificado com suporte a comandos básicos.</p>
 					<a href="https://github.com/JonatasArao/minishell" target="_blank" rel="noopener noreferrer"><img src="img/github.png" alt="Logo do Github" width="20">GitHub</a>
 				</article>
 			</div>
 		</section>
 	</main>
-	<footer>
-		<p>&copy; 2025</p>
-		<ul>
-			<li><a href="https://br.linkedin.com/in/jonatas-arao" target="_blank" rel="noopener">LinkedIn</a></li>
-			<li><a href="mailto:jonatas_arao@outlook.com">Email</a></li>
+	<footer class="footer">
+		<p class="footer-copyright">&copy; 2025</p>
+		<ul class="footer-links">
+			<li class="footer-link-item"><a class="footer-link" href="https://br.linkedin.com/in/jonatas-arao" target="_blank" rel="noopener">LinkedIn</a></li>
+			<li class="footer-link-item"><a class="footer-link" href="mailto:jonatas_arao@outlook.com">Email</a></li>
 		</ul>
 	</footer>
 </body>
