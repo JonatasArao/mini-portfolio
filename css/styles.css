@@ -68,18 +68,18 @@ section {
 	padding: 0.1em 3em;
 }
 
-section h2 {
+.section-title {
 	text-align: center;
 }
 
-.projects-container {
+.projects-container, .education-container {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 	gap: 1em;
 }
 
-.project-card {
+.project-card, .education-card {
 	background-color: #18181b;
 	display: flex;
 	flex-direction: column;
@@ -121,6 +121,36 @@ section h2 {
 
 .project-card .project-description {
 	margin: 0.5rem 0;
+}
+
+.skills-list {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	justify-content: center;
+	gap: 1em;
+}
+
+.skills-list .skills-item {
+	list-style-type: none;
+	border: 1px solid #fff;
+	border-radius: 1em;
+	padding: 1em;
+	cursor: default;
+}
+
+.education-card {
+	background-color: #a1a1a1;
+	color: #000;
+}
+
+.education-card .education-title {
+	text-align: center;
+}
+
+.education-card .education-logo {
+	height: 4em;
+	object-fit: contain;
 }
 
 .footer {
@@ -168,6 +198,10 @@ section h2 {
 		gap: 1em;
 	}
 
+	.section-text {
+		text-align: justify;
+	}
+
 	.profile-image {
 		width: 3rem;
 	}
@@ -176,7 +210,7 @@ section h2 {
 		font-size: 1.5em;
 	}
 
-	.projects-container {
+	.projects-container, .education-container {
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
@@ -187,8 +221,6 @@ section h2 {
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
-		border-radius: 20px;
-		padding: 1em;
 		width: 30%;
 	}
 
@@ -220,6 +252,19 @@ section h2 {
 
 	.project-card .project-description {
 		margin: 0.5rem 0;
+	}
+
+	.education-card {
+		justify-content: space-between;
+		width: 30%;
+	}
+
+	.education-card .education-title {
+		font-size: 1em;
+	}
+
+	.education-card .education-details {
+		font-size: 0.8em;
 	}
 }
 
