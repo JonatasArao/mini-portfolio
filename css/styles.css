@@ -74,6 +74,7 @@ section {
 
 .projects-container, .education-container {
 	display: grid;
+	grid-template-columns: 1fr;
 	gap: 1rem;
 }
 
@@ -96,6 +97,7 @@ section {
 
 .project-card .project-image {
 	height: auto;
+	max-height: 10rem;
 	object-fit: contain;
 }
 
@@ -209,13 +211,12 @@ section {
 	}
 
 	.projects-container, .education-container {
-		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-columns: repeat(3, 1fr);
 	}
 
 	.project-card {
+		width: 100%;
 		flex-direction: row;
-		justify-content: center;
-		align-items: center;
 	}
 
 	.project-card .project-image {
@@ -242,15 +243,11 @@ section {
 
 	.project-card .project-description {
 		font-size: 0.7rem;
-	}
-
-	.project-card .project-description {
 		margin: 0.5rem 0;
 	}
 
 	.education-card {
 		justify-content: space-between;
-		width: 30%;
 	}
 
 	.education-card .education-title {
