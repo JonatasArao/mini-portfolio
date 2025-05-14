@@ -73,9 +73,7 @@ section {
 }
 
 .projects-container, .education-container {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
+	display: grid;
 	gap: 1rem;
 }
 
@@ -98,7 +96,6 @@ section {
 
 .project-card .project-image {
 	height: auto;
-	max-height: 10em;
 	object-fit: contain;
 }
 
@@ -131,7 +128,7 @@ section {
 	gap: 1rem;
 }
 
-.skills-list .skills-itrem {
+.skills-list .skills-item {
 	list-style-type: none;
 	border: 1px solid #fff;
 	border-radius: 1rem;
@@ -169,17 +166,17 @@ section {
 	padding: 0;
 }
 
-.footer-links .footer-link-itrem {
+.footer-links .footer-link-item {
 	list-style-type: none;
 }
 
-.footer-links .footer-link-itrem .footer-link {
+.footer-links .footer-link-item .footer-link {
 	color: #a1a1a1;
 	text-decoration: none;
 }
 
-.footer-links .footer-link-itrem .footer-link:hover,
-.footer-links .footer-link-itrem .footer-link:focus {
+.footer-links .footer-link-item .footer-link:hover,
+.footer-links .footer-link-item .footer-link:focus {
 	color: #fff;
 }
 
@@ -212,17 +209,13 @@ section {
 	}
 
 	.projects-container, .education-container {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		gap: 1rem;
+		grid-template-columns: 1fr 1fr 1fr;
 	}
 
 	.project-card {
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
-		width: 30%;
 	}
 
 	.project-card .project-image {
