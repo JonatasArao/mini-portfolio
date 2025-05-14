@@ -210,7 +210,11 @@ section {
 		font-size: 1.5rem;
 	}
 
-	.projects-container, .education-container {
+	.projects-container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.education-container {
 		grid-template-columns: repeat(3, 1fr);
 	}
 
@@ -263,5 +267,9 @@ section {
 	section {
 		max-width: 1024px;
 		margin: 0 auto;
+	}
+
+	.projects-container {
+		grid-template-columns: repeat(3, 1fr);
 	}
 }
